@@ -35,7 +35,7 @@
 
 ![image](https://github.com/user-attachments/assets/4d0f26a5-9952-49e7-a047-ae3118a4be3d)
 
-Creation of any virtual machine on Azure will come with a few attached components (IP address, Virtual Network, etc). Assorting within a single resource gropu makes tracking these much easier. 
+Creation of any virtual machine on Azure will come with a few attached components (IP address, Virtual Network, etc). Assorting within a single resource group makes tracking these much easier. 
 
 <br />
 
@@ -56,7 +56,7 @@ Installation/Enabling of the IIS functionality is absolutely crucial for any web
 
 From the Internet Information Services Manager, located your website. Open the PHP Manager, then click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly above**.
 
-Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential. 
+Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential.
 
 
 ![image](https://github.com/user-attachments/assets/adbaeb79-d946-4b6a-9af4-3df540a5360f)
@@ -66,6 +66,34 @@ Since the ticketing system will take in a lot of variable information, a server-
 
 
 ![image](https://github.com/user-attachments/assets/d4332cc4-18b4-48f4-b127-08fd2b213511)
+
+
+![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
+
+
+![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
+
+
+![image](https://github.com/user-attachments/assets/36bfa859-de47-4f22-9db2-f374d6f89f03)
+
+
+![image](https://github.com/user-attachments/assets/7c742ee8-fb2f-4e7d-9262-0f17fc2ce0ca)
+
+
+![image](https://github.com/user-attachments/assets/7f092bfa-79e8-4fe7-a2b9-0223e7b2917f)
+
+
+![image](https://github.com/user-attachments/assets/5b0e091a-3aa0-4c2e-8703-6cf5374d8c25)
+
+
+![image](https://github.com/user-attachments/assets/189e163a-2bfb-4fff-8e36-d35b7b2f5dfa)
+
+
+
+
+
+
+
 
 
 
