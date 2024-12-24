@@ -28,6 +28,8 @@
 - Install and Configure MySQL
 - Move Core Files into Web Content Directory
 - Enable Relevant Extensions within osTicket
+- Create SQL Database Session
+- Set up osTicket Through the Browser
 
 <h2>Installation Steps</h2>
 
