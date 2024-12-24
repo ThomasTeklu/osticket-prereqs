@@ -19,17 +19,17 @@
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>Summary List of Prerequisites</h2>
 
-- Create and Log Into Azure Virtual Machine
+- Create and Connect to Azure Virtual Machine
 - Install/Enable IIS (with CGI)
-- Install and Register PHP from IIS
+- Install and Register PHP from within IIS
 - Install Microsoft Visual C++ Redistributable
 - Install and Configure MySQL
 - Move Core Files into Web Content Directory
 - Enable Relevant Extensions within osTicket
 - Create SQL Database Session
-- Set up osTicket Through the Browser
+- Set up osTicket Through Browser
 
 <h2>Installation Steps</h2>
 
