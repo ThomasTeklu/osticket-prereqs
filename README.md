@@ -48,12 +48,28 @@ Installation/Enabling of the IIS functionality is absolutely crucial for any web
 
 <br />
 
+![image](https://github.com/user-attachments/assets/890ab571-07e2-4571-a81e-5f179cce48bf)
 
-![image](https://github.com/user-attachments/assets/383629d3-37db-49e9-b3d9-b6e417db682e)
 
-From the Internet Information Services Manager, located your website. Open the PHP Manager, then click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive.
+[![Video Thumbnail](https://github.com/user-attachments/assets/383629d3-37db-49e9-b3d9-b6e417db682e)](https://i.imgur.com/zIMlpOV.mp4)
+
+
+From the Internet Information Services Manager, located your website. Open the PHP Manager, then click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly above**.
 
 Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential. 
+
+
+![image](https://github.com/user-attachments/assets/adbaeb79-d946-4b6a-9af4-3df540a5360f)
+
+
+![image](https://github.com/user-attachments/assets/f1da90da-9637-437e-a194-db5f4295178b)
+
+
+![image](https://github.com/user-attachments/assets/d4332cc4-18b4-48f4-b127-08fd2b213511)
+
+
+
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
