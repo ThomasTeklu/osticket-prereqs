@@ -33,13 +33,27 @@
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+![image](https://github.com/user-attachments/assets/4d0f26a5-9952-49e7-a047-ae3118a4be3d)
+
+Creation of any virtual machine on Azure will come with a few attached components (IP address, Virtual Network, etc). Assorting within a single resource gropu makes tracking these much easier. 
+
 <br />
+
+![image](https://github.com/user-attachments/assets/57c12b65-f11d-4641-9b25-5819b4efb58a)
+
+
+Open the Control Panel. From there, navigate to Programs->Turn Windows features on or off. Then, scroll down to "Internet Information Services" and turn it on. Within the sub folders, navigate to Web Wide Web Services->Apllication Development Features and turn on the "CGI" feature.
+
+Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since it is the nexus for receiving & processing requests from clients, interacting with dynamic-content generating componenets, and serving back the requested content. 
+
+<br />
+
+
+![image](https://github.com/user-attachments/assets/383629d3-37db-49e9-b3d9-b6e417db682e)
+
+From the Internet Information Services Manager, located your website. Open the PHP Manager, then click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive.
+
+Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential. 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
