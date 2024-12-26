@@ -74,6 +74,11 @@ From the installation files folder, install MySQL server. Go through with a typi
 ![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
 
 
+Next, unzip the website files and transfer a copy of the "upload" folder into "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
+
+You've now just made the files that your clients will be requesting (i.e. your website) available to them within your webserver. c:\inetpub\wwwroot is the web server's default root directory for their front-side material; therefore renaming the "upload" folder to "osTicket" now gives the application its desired path that will be seen within the URL for those accessing the ticketing system.  
+
+
 ![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
 
 
