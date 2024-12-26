@@ -65,10 +65,10 @@ Since the ticketing system will take in a lot of variable information, a server-
 ![image](https://github.com/user-attachments/assets/f1da90da-9637-437e-a194-db5f4295178b)
 
 
-From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the Username and Password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
-
-
 ![image](https://github.com/user-attachments/assets/d4332cc4-18b4-48f4-b127-08fd2b213511)
+
+
+From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the Username and Password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
 
 
 ![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
