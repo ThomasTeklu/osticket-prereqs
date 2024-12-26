@@ -82,6 +82,15 @@ You've now just made the files that your clients will be requesting (i.e. your w
 ![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
 
 
+After reloading IIS (Opening IIS, stopping and starting the server), open your site by navigating to it within IIS and clicking "Browse *:80". Pay attention to the fact that some extensions are not yet enabled. Go again then to your site with IIS, click on PHP Manager, then select "Enable or disable an extension". By right-clicking on, then selecting "enable", enable the following extensions:
+
+1. php_imap.dil
+2. php_intl.dil
+3. php_opcache.dil
+
+Refresh the osTicket site within the browser and see the changes that have ensued. 
+
+
 ![image](https://github.com/user-attachments/assets/7c742ee8-fb2f-4e7d-9262-0f17fc2ce0ca)
 
 
