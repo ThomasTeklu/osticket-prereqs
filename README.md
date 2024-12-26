@@ -100,6 +100,11 @@ Refresh the osTicket site within the browser and see the changes that have ensue
 ![image](https://github.com/user-attachments/assets/5b0e091a-3aa0-4c2e-8703-6cf5374d8c25)
 
 
+Returning to the Installation Files folder, install HeidiSQL. Upon installation, open Heidi SQL and create a new session (Here is where the MySQL credentials will come into use). From within the session, create a databse called "osTicket".
+
+This step establishes the SQL database that the ticketing application will utilize to store and manage data. Heidi SQL itself is a graphical interface tool used for interacting with SQL databases, cutting out the need for a continous stream of commandline entries.
+
+
 ![image](https://github.com/user-attachments/assets/36bfa859-de47-4f22-9db2-f374d6f89f03)
 
 
