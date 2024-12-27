@@ -123,7 +123,7 @@ This step establishes the SQL database that the ticketing application will utili
 ![image](https://github.com/user-attachments/assets/36bfa859-de47-4f22-9db2-f374d6f89f03)
 
 
-Finally, complete the settup of osTicket within the browser, establishing such things as your helpdesk username and password, admin account credentials, default email, etc. If all is completed, your site should be up and running. The following page can be expected to be seen afterwards:
+Finally, complete the settup of osTicket within the browser, establishing such things as your helpdesk username and password, admin account credentials, default email, etc. In addition to this, fill out the sections underneath "Database Settings" according to the database name and MySQL information previously established. If all is completed, your site should be up and running. The following page can be expected to be seen afterwards:
 
 
 ![image](https://github.com/user-attachments/assets/189e163a-2bfb-4fff-8e36-d35b7b2f5dfa)
