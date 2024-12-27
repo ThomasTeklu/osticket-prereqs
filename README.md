@@ -67,6 +67,8 @@ From the Internet Information Services Manager, locate your website. Open the PH
 Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential.
 
 
+## SQL
+
 ![image](https://github.com/user-attachments/assets/adbaeb79-d946-4b6a-9af4-3df540a5360f)
 
 
@@ -82,9 +84,11 @@ From the installation files folder, install MySQL server. Go through with a typi
 ![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
 
 
-Next, unzip the website files and transfer a copy of the "upload" folder into "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
+## Making osTicket Accessible
 
-You've now just made the files that your clients will be requesting (i.e. your website) available to them within your webserver. c:\inetpub\wwwroot is the web server's default root directory for their front-side material; therefore renaming the "upload" folder to "osTicket" now gives the application its desired path that will be seen within the URL for those accessing the ticketing system.  
+Next, unzip the website (osTicket) files and transfer a copy of the "upload" folder to "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
+
+You've now just made the files that your clients will be requesting (i.e. your website) available to them within your web server. c:\inetpub\wwwroot is the web server's default root directory for its front-side material; therefore renaming the "upload" folder to "osTicket" now gives the application its desired path that will be seen within the URL for those accessing the ticketing system.  
 
 
 ![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
