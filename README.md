@@ -80,11 +80,10 @@ Since the ticketing system will take in a lot of variable information, a server-
 
 From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the Username and Password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
 
+## Making osTicket Accessible
 
 ![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
 
-
-## Making osTicket Accessible
 
 Next, unzip the website (osTicket) files and transfer a copy of the "upload" folder to "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
 
