@@ -85,10 +85,12 @@ From the installation files folder, install MySQL server. Go through with a typi
 ![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
 
 
-Next, unzip the website (osTicket) files and transfer a copy of the "upload" folder to "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
+Next, from the installation files folder, unzip the website (osTicket) files and transfer a copy of the "upload" folder to "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
 
 You've now just made the files that your clients will be requesting (i.e. your website) available to them within your web server. c:\inetpub\wwwroot is the web server's default root directory for its front-side material; therefore renaming the "upload" folder to "osTicket" now gives the application its desired path that will be seen within the URL for those accessing the ticketing system.  
 
+
+## Enabling Extensions
 
 ![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
 
@@ -101,6 +103,7 @@ After reloading IIS (opening IIS, stopping and starting the server), open your s
 
 Refresh the osTicket site within the browser and see the changes that have ensued. 
 
+## Creation of SQL Database Session
 
 ![image](https://github.com/user-attachments/assets/7c742ee8-fb2f-4e7d-9262-0f17fc2ce0ca)
 
@@ -111,10 +114,11 @@ Refresh the osTicket site within the browser and see the changes that have ensue
 ![image](https://github.com/user-attachments/assets/5b0e091a-3aa0-4c2e-8703-6cf5374d8c25)
 
 
-Returning to the Installation Files folder, install HeidiSQL. Upon installation, open Heidi SQL and create a new session (Here is where the MySQL credentials will come into use). From within the session, create a databse called "osTicket".
+Returning to the installation files folder, install HeidiSQL. Upon installation, open Heidi SQL and create a new session (here is where the MySQL credentials will come into use). From within the session, create a databse called "osTicket".
 
 This step establishes the SQL database that the ticketing application will utilize to store and manage data. Heidi SQL itself is a graphical interface tool used for interacting with SQL databases, cutting out the need for a continous stream of commandline entries.
 
+## Finishing Setup
 
 ![image](https://github.com/user-attachments/assets/36bfa859-de47-4f22-9db2-f374d6f89f03)
 
