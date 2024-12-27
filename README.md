@@ -78,7 +78,7 @@ Since the ticketing system will take in a lot of variable information, a server-
 ![image](https://github.com/user-attachments/assets/d4332cc4-18b4-48f4-b127-08fd2b213511)
 
 
-From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the Username and Password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
+From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the username and password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
 
 ## Making osTicket Accessible
 
