@@ -129,8 +129,9 @@ Finally, complete the settup of osTicket within the browser, establishing such t
 ![image](https://github.com/user-attachments/assets/189e163a-2bfb-4fff-8e36-d35b7b2f5dfa)
 
 
+### Next
 
-
+Congratulations! You've just setup an osTicket system on your server and are now ready to put it to use. 
 
 
 
