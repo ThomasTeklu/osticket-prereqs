@@ -11,7 +11,7 @@
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Computing)
+- Microsoft Azure (Virtual Machines/Computing/Networks & IP Addresses)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -21,6 +21,9 @@
 
 <h2>Summary List of Prerequisites</h2>
 
+- Web Server Configuration
+- Website Configuration
+  
 - Create and Connect to Azure Virtual Machine
 - Install/Enable IIS (with CGI)
 - Install and Register PHP from within IIS
@@ -31,9 +34,9 @@
 - Create SQL Database Session
 - Set up osTicket Through Browser
 
-<h1>Installation Steps</h1>
+<h1>Web Server Configuration</h1>
 
-## **Creation of Virtual Machine**
+## * Virtual Machines
 
 ![image](https://github.com/user-attachments/assets/4d0f26a5-9952-49e7-a047-ae3118a4be3d)
 
