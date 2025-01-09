@@ -72,11 +72,32 @@ CGI (Common Gateway Interface) on the other hand is the protocol which web serve
 
 <br />
 
-## PHP
-
+Next, you'll open the "osTicket-Installation-Files" folder and install a variety of components necessary for successful operation and configuration of the web server. Start with the PHP Manager IIS (PHPManagerForIIS_V1.5.0.msi). When lanching the installer, select "Next" and "Allow" for any pages that follow.
 
 ![image](https://github.com/user-attachments/assets/890ab571-07e2-4571-a81e-5f179cce48bf)
 
+Remaining in the same folder, install the Rewrite Module (rewrite_amd64_en-US.msi):
+
+![image](https://github.com/user-attachments/assets/7933e578-eccb-4160-8aa6-c72fd13df5f3)
+
+Returning to PHP, create a directory within the File Explorer named "C:\PHP":
+
+![image](https://github.com/user-attachments/assets/59634676-e788-4f75-8ed8-a7c36060bbbb)
+
+From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder:
+
+![image](https://github.com/user-attachments/assets/5aa16b46-8310-49a3-83a9-5caf5902ec6b)
+
+Next, from the Installation Files folder, install VC_redist.x86.exe.
+
+You'll now install MYSQL 5.5.62 (mysql-5.5.62-win32.msi)
+
+
+
+
+
+
+# LATER
 
 [![Video Thumbnail](https://github.com/user-attachments/assets/383629d3-37db-49e9-b3d9-b6e417db682e)](https://i.imgur.com/zIMlpOV.mp4)
 
