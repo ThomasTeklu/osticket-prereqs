@@ -144,6 +144,40 @@ You'll need to "reload" IIS here, so go ahead and renavigate to the osTicketVM H
 
 With that, you've gotten throught the "peripheral" settings. Let's now move on to the main part of this walkthrough: setting up the ticketing system itself.
 
+### osTicket
+
+Install osTicket v1.15.8 from the Installation Files folder by unzipping "osTicket-v1.15.8.zip". Copy the "upload" folder into "c:\inetpub\wwwroot". This is the directory wherein the material presentable to the client (i.e. the website) resides.
+
+Within the wwwroot folder, rename the copied "upload" folder "osTicket":
+
+![image](https://github.com/user-attachments/assets/f0b9d107-e351-46ef-8480-76b6e82e368f)
+
+Return to IIS and reload again (stop and start the server). Underneath the "Default Web Site" section in the left-side panel, you should now see "osTicket". If you click on the expand option, you will see all the different types of files, images, scripts, and other components that comprise your website.
+
+Click on "osTicket", the on the right-hand side select "Browse*.80". This will open your website:
+
+![image](https://github.com/user-attachments/assets/1d79c1ae-4938-4c11-825d-8492b75c290f)
+
+Notice the "Required" components that we installed earlier in our web server configuration section. Towards the bottom, you will notice that some of the "Recommended" extensions are not enabled. To enable these, we'll return to IIS, then the PHP Manager. Scroll down to the "PHP Extensions" and click "Enable or disable and extension:
+
+![image](https://github.com/user-attachments/assets/18eb5370-8f95-4130-be79-c67ae469ceb0)
+
+Locate the following within the disabled list, then right-click on them and select "Enable":
+
+- php_imap.dil
+- php_intl.dll
+- php_opcache.dil
+
+Now refresh the osTicket site within the browser and notice what changes.
+
+
+
+
+
+
+
+
+
 ## SQL
 
 ![image](https://github.com/user-attachments/assets/adbaeb79-d946-4b6a-9af4-3df540a5360f)
