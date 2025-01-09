@@ -40,21 +40,30 @@ This is the first in a series of three repositories which will guide one through
 
 For setting up our ticketing system, we will be utilizing Microsoft Azure for virtual machines and computing. The Azure environment will serve as our construction grounds for building up and configuring the infrastructure of the ticketing system. 
 
-Within Azure, create a new virtual machine with Windows OS, and 4 virtual CPUs. This will serve as your main interface for setting up your osTicket system. 
+Within Azure, create a new virtual machine specifying Windows OS, and 4 virtual CPUs; the rest of the default settings can be left as they are. This will serve as your main interface for setting up your osTicket system. Make sure to keep track of Administrator Account credentials as they will be frequently used throughout the three-part series.
 
-The creation of any virtual machine within Azure will come with a few attached components (IP address, Virtual Network, etc). Assigning them to a single resource group makes managing much easier.
+The creation of any virtual machine within Azure will come with a few attached components (IP address, Virtual Network, etc). 
 
-![image](https://github.com/user-attachments/assets/4d0f26a5-9952-49e7-a047-ae3118a4be3d)
+![image](https://github.com/user-attachments/assets/0507bf09-9b66-4f8a-a6de-3996b51c1745)
 
-
-## Turning Virtual Machine into a Web Server
-![image](https://github.com/user-attachments/assets/57c12b65-f11d-4641-9b25-5819b4efb58a)
+These will automatically be sorted into a single "resource group" which will make administration of the VM (virtual machine) and its associated resources easier.
 
 
-After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished upon creation. Within the VM (virtual machine), download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
+After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished upon creation. Within the VM, download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
+
+![image](https://github.com/user-attachments/assets/b8b6b4e1-31d0-49d2-a980-776fd2ad1d25)
+
+We'll leave that there for now and return to it later.
+
+You'll now turn this virtual machine into a web server. Open the Control Panel and navigate to "Programs" -> "Turn Windows features on or off". Then scroll down to "Internet Information Services" (IIS) and click the box next to it so that it displays a dark block mark within.
+
+![image](https://github.com/user-attachments/assets/92d34843-5e9c-4e35-969d-b8e17d6c9c45)
 
 
-Open the Control Panel. From there, navigate to Programs->Turn Windows features on or off. Then, scroll down to "Internet Information Services" and click the box next to it so that it displays a check mark within. Entering the sub folders, navigate to Web Wide Web Services->Apllication Development Features and click on the box next to the "CGI" feature.
+Entering the sub folders, navigate to "Web Wide Web Services" -> "Apllication Development Features" and click on the box next to the "CGI" feature.
+
+![image](https://github.com/user-attachments/assets/7e941389-cad9-4155-afa7-8c7481d60e6f)
+
 
 Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since it is the nexus for receiving & processing requests from clients, interacting with dynamic-content generating componenets, and serving back the requested content. 
 
