@@ -96,7 +96,7 @@ Next, from the Installation Files folder, install VC_redist.x86.exe.
 <br />
 <br />
 
-You'll now install your database which is a crucial aspect for websites, especially for those which deal with dynamic-content generation which a ticketing system certainly will. Click on "mysql-5.5.62-win32.msi" to install MYSQL 5.5.62. Make sure to select "Typical" for "Choose Setup type" when prompted:
+You'll now install your database server which is a crucial aspect for websites, especially for those which deal with dynamic-content generation which a ticketing system certainly will. Click on "mysql-5.5.62-win32.msi" to install MYSQL 5.5.62. Make sure to select "Typical" for "Choose Setup type" when prompted:
 
 ![image](https://github.com/user-attachments/assets/23b91a32-e795-4dd5-9b61-86203ece8e6f)
 
@@ -170,84 +170,55 @@ Locate the following within the disabled list, then right-click on them and sele
 
 Now refresh the osTicket site within the browser and notice what changes.
 
+<br />
+<br />
+<br />
+
+Return to the File Explorer and open up your C drive. Within, rename: ost-config.php from "ost-sampleconfig.php" to "ost-config.php". Now right-click on that same file and select "Properties". Move to the "Security" tab and select the "Advanced" option. 
+
+Within the newly openned window, select "Disable inheritance" then "Remove all inherited permissions from this object":
+
+![image](https://github.com/user-attachments/assets/1678028b-aa0a-426f-91d9-30ded8ab76bf)
+
+Now give permissions to everyone by selecting "Add" then "Select a principal" and finally entering in "Everyone" within the object name section. Make sure that these permissions are full by selecting "Full control" in the following window: 
+
+![image](https://github.com/user-attachments/assets/c1a64e15-792c-4950-82af-fa5f164bbc5c)
+
+Make sure to select "Apply" before clicking "OK" to close out of this section. 
+
+<br />
+<br />
+<br />
+
+Let's finish up the website setup.
+
+Return to the browser and select "Continue". Give your Helpdesk a name and an email that will receive emails from "customers". In addition to this, establish Admin User credentials. 
+
+Before moving on further in the browser, we're going to return one last time to the Installation Files folder. Install HeidiSQL.
+
+**Note:** What we're installing now is not the database server itself as we installed that earlier. This rather, is a database management tool that allows for interaction with the database through a GUI. 
+
+Continuing, open HeidiSQL and select "New" in the bottom left corner to create a new session:
+
+![image](https://github.com/user-attachments/assets/64c42774-bb76-4e2a-950b-0140558b30a4)
+
+Recall the MySQL password that you established earlier on, then enter that within the "Password" field. Next click "Open" and in the "Unnamed" pane, right-click in a blank space to create a databse and name it "osTicket":
+
+![image](https://github.com/user-attachments/assets/4d0a6c31-500d-4898-a1fc-c2b33e6ac517)
+
+Your database has now been created so now we can configure the website to use it. Return back to the browser and within the "Database Settings" section we left off on, enter in the Database name, MySQL Username (root), and the MySQL Password you selected. Click "Install Now" and congratulations!
+
+If all went well, you should have your ticketing site completely setup and ready for use:
+
+![image](https://github.com/user-attachments/assets/337d0711-54b0-49c8-89eb-335e919d1a7e)
+
+Take note of the "Your osTicket URL" and "Your Staff Control Panel" as we will be utilizing them in the next installations of this walkthrough series. 
+
+As the very last steps for this section, we'll do a bit of cleaning up. First, delete C:\inetpub\wwwroot\osTicket\setup. Next and lastly, change the permissions of the ost-config.php file we tinkered with earlier to "Read" only. Do this by again navigating to the file, opening its properties, clicking "Advanced" then double-click on "Full Control" and deselct every option except "Read". Apply the changes and exit.
+
+In the next walkthrough, we'll work on Post-Installation Setup.
 
 
-
-
-
-
-
-
-## SQL
-
-![image](https://github.com/user-attachments/assets/adbaeb79-d946-4b6a-9af4-3df540a5360f)
-
-
-![image](https://github.com/user-attachments/assets/f1da90da-9637-437e-a194-db5f4295178b)
-
-
-![image](https://github.com/user-attachments/assets/d4332cc4-18b4-48f4-b127-08fd2b213511)
-
-
-From the installation files folder, install MySQL server. Go through with a typical setup and configuration. Make sure to take note of the username and password that you establish as it will be needed later on for creating the website's database and linking it with the ticketing website itself.
-
-## Making osTicket Accessible
-
-![image](https://github.com/user-attachments/assets/fd8137cb-da0d-4d2a-a41b-e8325eb9374e)
-
-
-Next, from the installation files folder, unzip the website (osTicket) files and transfer a copy of the "upload" folder to "c:\inetpub\wwwroot". After that, rename "upload" to "osTicket". 
-
-You've now just made the files that your clients will be requesting (i.e. your website) available to them within your web server. c:\inetpub\wwwroot is the web server's default root directory for its front-side material; therefore renaming the "upload" folder to "osTicket" now gives the application its desired path that will be seen within the URL for those accessing the ticketing system.  
-
-
-## Enabling Extensions
-
-![image](https://github.com/user-attachments/assets/7870ed5e-6767-440a-b585-9af78aa1fe6a)
-
-
-After reloading IIS (opening IIS, stopping and starting the server), open your site by navigating to it within IIS and clicking "Browse *:80". Pay attention to the fact that some extensions are not yet enabled. Go again then to your site with IIS, click on PHP Manager, then select "Enable or disable an extension". By right-clicking on, then selecting "enable", enable the following extensions:
-
-1. php_imap.dil
-2. php_intl.dil
-3. php_opcache.dil
-
-Refresh the osTicket site within the browser and see the changes that have ensued. 
-
-## Creation of SQL Database Session
-
-![image](https://github.com/user-attachments/assets/7c742ee8-fb2f-4e7d-9262-0f17fc2ce0ca)
-
-
-![image](https://github.com/user-attachments/assets/7f092bfa-79e8-4fe7-a2b9-0223e7b2917f)
-
-
-![image](https://github.com/user-attachments/assets/5b0e091a-3aa0-4c2e-8703-6cf5374d8c25)
-
-
-Returning to the installation files folder, install HeidiSQL. Upon installation, open Heidi SQL and create a new session (here is where the MySQL credentials will come into use). From within the session, create a databse called "osTicket".
-
-This step establishes the SQL database that the ticketing application will utilize to store and manage data. Heidi SQL itself is a graphical interface tool used for interacting with SQL databases, cutting out the need for a continous stream of commandline entries.
-
-## Finishing Setup
-
-![image](https://github.com/user-attachments/assets/36bfa859-de47-4f22-9db2-f374d6f89f03)
-
-
-Finally, complete the settup of osTicket within the browser, establishing such things as your helpdesk username and password, admin account credentials, default email, etc. In addition to this, fill out the sections underneath "Database Settings" according to the database name and MySQL information previously established. If all is completed, your site should be up and running. The following page can be expected to be seen afterwards:
-
-
-![image](https://github.com/user-attachments/assets/189e163a-2bfb-4fff-8e36-d35b7b2f5dfa)
-
-
-### Next
-
-Congratulations! You've just setup an osTicket system on your server and are now ready to put it to use. 
-
-
-
-
-
-
+Until then, take care!
 
 
