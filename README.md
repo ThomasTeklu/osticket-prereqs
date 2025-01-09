@@ -90,22 +90,59 @@ From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nt
 
 Next, from the Installation Files folder, install VC_redist.x86.exe.
 
-You'll now install MYSQL 5.5.62 (mysql-5.5.62-win32.msi)
 
 
+<br /> 
+<br />
+<br />
 
+You'll now install your database which is a crucial aspect for websites, especially for those which deal with dynamic-content generation which a ticketing system certainly will. Click on "mysql-5.5.62-win32.msi" to install MYSQL 5.5.62. Make sure to select "Typical" for "Choose Setup type" when prompted:
 
+![image](https://github.com/user-attachments/assets/23b91a32-e795-4dd5-9b61-86203ece8e6f)
 
+In addition to that, before selecting "Finish" ensure that "Launch the MySQL Instance Configuration Wizard":
 
-# LATER
+![image](https://github.com/user-attachments/assets/7589a050-0fdd-4f12-b67c-d9490d309d2b)
 
-[![Video Thumbnail](https://github.com/user-attachments/assets/383629d3-37db-49e9-b3d9-b6e417db682e)](https://i.imgur.com/zIMlpOV.mp4)
+You'll automatically be shown the aforementioned wizard. When prompted, select "Standard Configuration" then continue with the configuration:
 
+![image](https://github.com/user-attachments/assets/a8c20f91-e281-452c-aba9-dba81c14ff0b)
 
-From the Internet Information Services Manager, locate your website. Open the PHP Manager, then click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly above**.
+Continue with standard settings. Make sure to set a root password that you will remember as it will be needed later on for establishing your database to work with your website later on:
+
+![image](https://github.com/user-attachments/assets/d4ec0f24-e368-406e-a520-66486fbe40a8)
+
+After all of this, select "Execute" to complete the configuration, then select "Finish".
+
+<br />
+<br />
+<br />
+
+# Website Configuration
+
+With the parameters for a function web server now established, let's move on to more of the website-configuration side of things.
+
+<br />
+
+Open Internet INformation Services (IIS) Manager as an admin:
+
+![image](https://github.com/user-attachments/assets/b9a9b32d-97a9-43ec-8e0c-974dc074ee7d)
+
+Next, navigate to your website on the right-side pane, then select the "PHP Manager":
+
+![image](https://github.com/user-attachments/assets/cb0d362a-b7ea-46b9-86fe-a82d1e86d582)
+
+In the ensuing window, register the php-cgi.exe file that we located in our C:\PHP directory earlier. To do this click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly below**:
+
+[![Video Thumbnail](https://github.com/user-attachments/assets/0c698fd1-aa7f-41d1-b94a-ac131a23cd5e)](https://i.imgur.com/zIMlpOV.mp4)
 
 Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential.
 
+You'll need to "reload" IIS here, so go ahead and renavigate to the osTicketVM Home, then hit "stop" and after "start" on the right-side panel:
+
+![image](https://github.com/user-attachments/assets/854ed0b8-4782-4626-b5eb-0e5c33b2128a)
+
+With that, you've gotten throught the "peripheral" settings. Let's now move on to the main part of this walkthrough: setting up the ticketing system itself.
 
 ## SQL
 
