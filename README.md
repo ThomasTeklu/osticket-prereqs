@@ -48,6 +48,7 @@ The creation of any virtual machine within Azure will come with a few attached c
 
 These will automatically be sorted into a single "resource group" which will make administration of the VM (virtual machine) and its associated resources easier.
 
+### Enabling Necessary Functionalities 
 
 After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished upon creation. Within the VM, download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
 
@@ -60,12 +61,14 @@ You'll now turn this virtual machine into a web server. Open the Control Panel a
 ![image](https://github.com/user-attachments/assets/92d34843-5e9c-4e35-969d-b8e17d6c9c45)
 
 
-Entering the sub folders, navigate to "Web Wide Web Services" -> "Apllication Development Features" and click on the box next to the "CGI" feature.
+Expanding the sub folders, navigate to "Web Wide Web Services" -> "Apllication Development Features" and click on the box next to the "CGI" feature.
 
 ![image](https://github.com/user-attachments/assets/7e941389-cad9-4155-afa7-8c7481d60e6f)
 
 
-Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since it is the nexus for receiving & processing requests from clients, interacting with dynamic-content generating componenets, and serving back the requested content. 
+Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since, first and foremost, it is the web server software itself, the nexus for receiving & processing requests from clients, as well as serving back the requested content. 
+
+CGI (Common Gateway Interface) on the other hand is the protocol which web servers utilize to interact with external programs and scripts in order to generate dynamic content (processing input, accessing databases, etc.) in response to certain types of client requests.
 
 <br />
 
