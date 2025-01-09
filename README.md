@@ -4,7 +4,7 @@
 
 <h1>osTicket - Prerequisites and Installation</h1>
 
-
+This is the first in a series of three repositories which will guide one through the process of creating an online ticketing system, akin to those used by various corporations/organizations to receive and resolve any issues that customers or internal members may have. In this first part, I will walk through how to spin up a virtual environment (Azure), establish and configure a web server, and enabling necessary parameters for the desired ticketing system (osTicket). 
 
 
 
@@ -24,30 +24,34 @@
 - Web Server Configuration
 - Website Configuration
   
-- Create and Connect to Azure Virtual Machine
-- Install/Enable IIS (with CGI)
-- Install and Register PHP from within IIS
-- Install Microsoft Visual C++ Redistributable
-- Install and Configure MySQL
-- Move Core Files into Web Content Directory
-- Enable Relevant Extensions within osTicket
-- Create SQL Database Session
-- Set up osTicket Through Browser
+ Create and Connect to Azure Virtual Machine
+ Install/Enable IIS (with CGI)
+ Install and Register PHP from within IIS
+ Install Microsoft Visual C++ Redistributable
+ Install and Configure MySQL
+ Move Core Files into Web Content Directory
+ Enable Relevant Extensions within osTicket
+ Create SQL Database Session
+ Set up osTicket Through Browser
 
 <h1>Web Server Configuration</h1>
 
-## * Virtual Machines
+### Virtual Machines
+
+For setting up our ticketing system, we will be utilizing Microsoft Azure for virtual machines and computing. The Azure environment will serve as our construction grounds for building up and configuring the infrastructure of the ticketing system. 
+
+Within Azure, create a new virtual machine with Windows OS, and 4 virtual CPUs. This will serve as your main interface for setting up your osTicket system. 
+
+The creation of any virtual machine within Azure will come with a few attached components (IP address, Virtual Network, etc). Assigning them to a single resource group makes managing much easier.
 
 ![image](https://github.com/user-attachments/assets/4d0f26a5-9952-49e7-a047-ae3118a4be3d)
 
-Within Azure, create a new virtual machine with Windows OS, and at least 4 virtual CPUs. This will serve as your main interface for setting up your osTicket system. 
-
-The creation of any virtual machine within Azure will come with a few attached components (IP address, Virtual Network, etc). Assigning them to a single resource group makes tracking these much easier. 
-
-<br />
 
 ## Turning Virtual Machine into a Web Server
 ![image](https://github.com/user-attachments/assets/57c12b65-f11d-4641-9b25-5819b4efb58a)
+
+
+After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished upon creation. Within the VM (virtual machine), download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
 
 
 Open the Control Panel. From there, navigate to Programs->Turn Windows features on or off. Then, scroll down to "Internet Information Services" and click the box next to it so that it displays a check mark within. Entering the sub folders, navigate to Web Wide Web Services->Apllication Development Features and click on the box next to the "CGI" feature.
