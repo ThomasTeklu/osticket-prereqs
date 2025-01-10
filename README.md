@@ -44,27 +44,29 @@ These will automatically be sorted into a single "resource group" which will mak
 
 ### Enabling Necessary Functionalities 
 
-After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished upon creation. Within the VM, download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
+After the resources have been generated, log into the virtual machine by way of remote desktop, using the credentials you esablished. Within the VM, download the [Initial Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip into your desktop. The folder should be called "osTicket-Installation-Files"
 
 ![image](https://github.com/user-attachments/assets/b8b6b4e1-31d0-49d2-a980-776fd2ad1d25)
 
 We'll leave that there for now and return to it later.
 
-You'll now turn this virtual machine into a web server. Open the Control Panel and navigate to "Programs" -> "Turn Windows features on or off". Then scroll down to "Internet Information Services" (IIS) and click the box next to it so that it displays a dark block mark within.
+You'll now turn this virtual machine into a web server. Open the Control Panel and navigate to "Programs" -> "Turn Windows features on or off". Then scroll down to "Internet Information Services" (IIS) and click the box next to it so that it displays a dark block mark within:
 
 ![image](https://github.com/user-attachments/assets/92d34843-5e9c-4e35-969d-b8e17d6c9c45)
 
 
-Expanding the sub folders, navigate to "Web Wide Web Services" -> "Apllication Development Features" and click on the box next to the "CGI" feature.
+Expanding the sub folders (clicking the small plus next to aforementioned box), navigate to "Web Wide Web Services" -> "Apllication Development Features" and click on the box next to the "CGI" feature:
 
 ![image](https://github.com/user-attachments/assets/7e941389-cad9-4155-afa7-8c7481d60e6f)
 
 
-Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since, first and foremost, it is the web server software itself, the nexus for receiving & processing requests from clients, as well as serving back the requested content. 
+Installation/Enabling of the IIS functionality is absolutely crucial for any web server running on Windows OS since, it is the web server software itself: the nexus for receiving & processing requests from clients, as well as serving back the requested content. 
 
 CGI (Common Gateway Interface) on the other hand is the protocol which web servers utilize to interact with external programs and scripts in order to generate dynamic content (processing input, accessing databases, etc.) in response to certain types of client requests.
 
 <br />
+
+# LEFT OFF HERE
 
 Next, you'll open the "osTicket-Installation-Files" folder and install a variety of components necessary for successful operation and configuration of the web server. Start with the PHP Manager IIS (PHPManagerForIIS_V1.5.0.msi). When lanching the installer, select "Next" and "Allow" for any pages that follow.
 
