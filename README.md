@@ -4,7 +4,7 @@
 
 <h1>osTicket - Prerequisites and Installation</h1>
 
-This is the first in a series of three repositories which will guide one through the process of creating an online ticketing system, akin to those used by various corporations/organizations to receive and resolve any issues that customers or internal members may have. In this first part, I will walk through how to spin up a virtual environment (Azure), establish and configure a web server, and enabling necessary parameters for the desired ticketing system (osTicket). 
+This is the first in a series of three repositories which will guide one through the process of creating an online ticketing system, akin to those used by various corporations/organizations to receive and resolve any issues that customers or internal members may file for assistance. In this first part, I will walk through how to spin up a virtual environment (Azure), establish and configure a web server, and enabling necessary parameters for the desired ticketing system (osTicket). 
 
 
 
@@ -23,7 +23,9 @@ This is the first in a series of three repositories which will guide one through
 
 - Web Server Configuration
 - Website Configuration
-  
+
+<br />
+<br />
 
 <h1>Web Server Configuration</h1>
 
