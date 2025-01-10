@@ -24,15 +24,6 @@ This is the first in a series of three repositories which will guide one through
 - Web Server Configuration
 - Website Configuration
   
- Create and Connect to Azure Virtual Machine
- Install/Enable IIS (with CGI)
- Install and Register PHP from within IIS
- Install Microsoft Visual C++ Redistributable
- Install and Configure MySQL
- Move Core Files into Web Content Directory
- Enable Relevant Extensions within osTicket
- Create SQL Database Session
- Set up osTicket Through Browser
 
 <h1>Web Server Configuration</h1>
 
