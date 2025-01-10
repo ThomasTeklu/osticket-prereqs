@@ -24,20 +24,21 @@ This is the first in a series of three repositories which will guide one through
 - Web Server Configuration
 - Website Configuration
 
-<br />
-<br />
-
-<h1>Web Server Configuration</h1>
+<h1> 
+  
+# Web Server Configuration
 
 ### Virtual Machines
 
 For setting up our ticketing system, we will be utilizing Microsoft Azure for virtual machines and computing. The Azure environment will serve as our construction grounds for building up and configuring the infrastructure of the ticketing system. 
 
-Within Azure, create a new virtual machine specifying Windows OS, and 4 virtual CPUs; the rest of the default settings can be left as they are. This will serve as your main interface for setting up your osTicket system. Make sure to keep track of Administrator Account credentials as they will be frequently used throughout the three-part series.
+Within Azure, create a new virtual machine specifying Windows OS, and 4 virtual CPUs; the rest of the default settings can be left as they are. This will serve as your main interface for setting up your osTicket system. Make sure to keep track of Administrator Account credentials as they will be frequently used throughout this three-part tutorial.
 
 The creation of any virtual machine within Azure will come with a few attached components (IP address, Virtual Network, etc). 
 
 ![image](https://github.com/user-attachments/assets/0507bf09-9b66-4f8a-a6de-3996b51c1745)
+
+<br />
 
 These will automatically be sorted into a single "resource group" which will make administration of the VM (virtual machine) and its associated resources easier.
 
