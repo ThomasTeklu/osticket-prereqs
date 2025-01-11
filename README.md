@@ -116,23 +116,21 @@ After all of this, select "Execute" to complete the configuration, then select "
 
 With the parameters for a function web server now established, let's move on to more of the website-configuration side of things.
 
-<br />
-
-Open Internet INformation Services (IIS) Manager as an admin:
+Open Internet Information Services (IIS) Manager as an admin:
 
 ![image](https://github.com/user-attachments/assets/b9a9b32d-97a9-43ec-8e0c-974dc074ee7d)
 
-Next, navigate to your website on the right-side pane, then select the "PHP Manager":
+Next, navigate to your website (Default Web Site) on the left-side pane, then select the "PHP Manager":
 
 ![image](https://github.com/user-attachments/assets/cb0d362a-b7ea-46b9-86fe-a82d1e86d582)
 
-In the ensuing window, register the php-cgi.exe file that we located in our C:\PHP directory earlier. To do this click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly below**:
+In the ensuing window, register the php-cgi.exe file that we moved to our C:\PHP directory earlier. To do this click on "Register new PHP version" under the "PHP Setup" section. From there, link to the php file location on your drive. For a video demonstration, click on **the image directly below**:
 
 [![Video Thumbnail](https://github.com/user-attachments/assets/0c698fd1-aa7f-41d1-b94a-ac131a23cd5e)](https://i.imgur.com/zIMlpOV.mp4)
 
 Since the ticketing system will take in a lot of variable information, a server-side script that manages dynamic-content generation is essential.
 
-You'll need to "reload" IIS here, so go ahead and renavigate to the osTicketVM Home, then hit "stop" and after "start" on the right-side panel:
+You'll need to "reload" IIS here, so go ahead and renavigate to the osTicketVM Home, then hit "stop" and then "start" on the right-side panel:
 
 ![image](https://github.com/user-attachments/assets/854ed0b8-4782-4626-b5eb-0e5c33b2128a)
 
@@ -140,7 +138,7 @@ With that, you've gotten throught the "peripheral" settings. Let's now move on t
 
 ### osTicket
 
-Install osTicket v1.15.8 from the Installation Files folder by unzipping "osTicket-v1.15.8.zip". Copy the "upload" folder into "c:\inetpub\wwwroot". This is the directory wherein the material presentable to the client (i.e. the website) resides.
+Install osTicket v1.15.8 from the Installation Files folder by unzipping "osTicket-v1.15.8.zip". Copy the "upload" folder into "C:\inetpub\wwwroot". This is the directory wherein the material presentable to the client (i.e. the website) resides.
 
 Within the wwwroot folder, rename the copied "upload" folder "osTicket":
 
@@ -152,7 +150,9 @@ Click on "osTicket", the on the right-hand side select "Browse*.80". This will o
 
 ![image](https://github.com/user-attachments/assets/1d79c1ae-4938-4c11-825d-8492b75c290f)
 
-Notice the "Required" components that we installed earlier in our web server configuration section. Towards the bottom, you will notice that some of the "Recommended" extensions are not enabled. To enable these, we'll return to IIS, then the PHP Manager. Scroll down to the "PHP Extensions" and click "Enable or disable and extension:
+Notice the "Required" components that we installed earlier in our web server configuration section. 
+
+Towards the bottom, you will notice that some of the "Recommended" extensions are not enabled. To enable these, we'll return to IIS, then the PHP Manager (within your website). Scroll down to the "PHP Extensions" and click "Enable or disable and extension:
 
 ![image](https://github.com/user-attachments/assets/18eb5370-8f95-4130-be79-c67ae469ceb0)
 
@@ -165,23 +165,21 @@ Locate the following within the disabled list, then right-click on them and sele
 Now refresh the osTicket site within the browser and notice what changes.
 
 <br />
-<br />
-<br />
 
-Return to the File Explorer and open up your C drive. Within, rename: ost-config.php from "ost-sampleconfig.php" to "ost-config.php". Now right-click on that same file and select "Properties". Move to the "Security" tab and select the "Advanced" option. 
+Return to the File Explorer and open up your C: drive. Rename "ost-sampleconfig.php" to "ost-config.php". 
+
+Now right-click on that same file and select "Properties". Move to the "Security" tab and select the "Advanced" option. 
 
 Within the newly openned window, select "Disable inheritance" then "Remove all inherited permissions from this object":
 
 ![image](https://github.com/user-attachments/assets/1678028b-aa0a-426f-91d9-30ded8ab76bf)
 
-Now give permissions to everyone by selecting "Add" then "Select a principal" and finally entering in "Everyone" within the object name section. Make sure that these permissions are full by selecting "Full control" in the following window: 
+Give permissions to everyone by selecting "Add" then "Select a principal" and finally entering in "Everyone" within the object name section. Make sure that these permissions are full by selecting "Full control" in the following window: 
 
 ![image](https://github.com/user-attachments/assets/c1a64e15-792c-4950-82af-fa5f164bbc5c)
 
-Make sure to select "Apply" before clicking "OK" to close out of this section. 
+Select "Apply" before clicking "OK" to close out of this section. 
 
-<br />
-<br />
 <br />
 
 Let's finish up the website setup.
