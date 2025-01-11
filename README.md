@@ -180,15 +180,13 @@ Give permissions to everyone by selecting "Add" then "Select a principal" and fi
 
 Select "Apply" before clicking "OK" to close out of this section. 
 
-<br />
-
-Let's finish up the website setup.
+### Wrapping Up
 
 Return to the browser and select "Continue". Give your Helpdesk a name and an email that will receive emails from "customers". In addition to this, establish Admin User credentials. 
 
-Before moving on further in the browser, we're going to return one last time to the Installation Files folder. Install HeidiSQL.
+Before moving on further in the browser, we're going to return one last time to the Installation Files folder. Upon arriving, Install HeidiSQL.
 
-**Note:** What we're installing now is not the database server itself as we installed that earlier. This rather, is a database management tool that allows for interaction with the database through a GUI. 
+**Note:** What we're installing now is not the database server itself (we installed that earlier). This rather, is a database management tool that allows for interaction with the database through a GUI (Graphical User Interface). 
 
 Continuing, open HeidiSQL and select "New" in the bottom left corner to create a new session:
 
@@ -198,15 +196,17 @@ Recall the MySQL password that you established earlier on, then enter that withi
 
 ![image](https://github.com/user-attachments/assets/4d0a6c31-500d-4898-a1fc-c2b33e6ac517)
 
-Your database has now been created so now we can configure the website to use it. Return back to the browser and within the "Database Settings" section we left off on, enter in the Database name, MySQL Username (root), and the MySQL Password you selected. Click "Install Now" and congratulations!
+Your database has now been created, so now we can configure the website to use it. Return back to the browser and within the "Database Settings" section we left off on, enter in the Database name, MySQL Username (root), and the MySQL Password you selected. Click "Install Now" and congratulations!
 
 If all went well, you should have your ticketing site completely setup and ready for use:
 
 ![image](https://github.com/user-attachments/assets/337d0711-54b0-49c8-89eb-335e919d1a7e)
 
-Take note of the "Your osTicket URL" and "Your Staff Control Panel" as we will be utilizing them in the next installations of this walkthrough series. 
+Take note of the "Your osTicket URL" and "Your Staff Control Panel" links as we will be utilizing them in the next installations of this walkthrough series. 
 
-As the very last steps for this section, we'll do a bit of cleaning up. First, delete C:\inetpub\wwwroot\osTicket\setup. Next and lastly, change the permissions of the ost-config.php file we tinkered with earlier to "Read" only. Do this by again navigating to the file, opening its properties, clicking "Advanced" then double-click on "Full Control" and deselct every option except "Read". Apply the changes and exit.
+As the very last steps for this section, we'll do a bit of cleaning up. First, delete C:\inetpub\wwwroot\osTicket\setup. 
+
+Next and lastly, change the permissions of the ost-config.php file we tinkered with earlier to "Read" only. Do this by again navigating to the file, opening its properties, clicking "Advanced" then double-click on "Full Control" and deselct every option except "Read". Apply the changes and exit.
 
 In the next walkthrough, we'll work on Post-Installation Setup.
 
