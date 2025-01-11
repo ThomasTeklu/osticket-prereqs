@@ -87,15 +87,16 @@ Next, you'll open the "osTicket-Installation-Files" folder and install a variety
 5. From the Installation Files folder, install VC_redist.x86.exe.
 
 <br /> 
-<br />
 
 ### Database Setup
 
-You'll now install your database server which is a crucial aspect for websites, especially for those which deal with dynamic-content generation which a ticketing system certainly will. Click on "mysql-5.5.62-win32.msi" to install MYSQL 5.5.62. Make sure to select "Typical" for "Choose Setup type" when prompted:
+You'll now install your database server which is a crucial aspect for websites, especially for those which deal with dynamic-content generation (i.e. a ticketing system). 
+
+Click on "mysql-5.5.62-win32.msi" to install MYSQL 5.5.62. Make sure to select "Typical" for "Choose Setup type" when prompted:
 
 ![image](https://github.com/user-attachments/assets/23b91a32-e795-4dd5-9b61-86203ece8e6f)
 
-In addition to that, before selecting "Finish" ensure that "Launch the MySQL Instance Configuration Wizard":
+In addition to that, before selecting "Finish" ensure that "Launch the MySQL Instance Configuration Wizard" is checked on:
 
 ![image](https://github.com/user-attachments/assets/7589a050-0fdd-4f12-b67c-d9490d309d2b)
 
@@ -103,14 +104,12 @@ You'll automatically be shown the aforementioned wizard. When prompted, select "
 
 ![image](https://github.com/user-attachments/assets/a8c20f91-e281-452c-aba9-dba81c14ff0b)
 
-Continue with standard settings. Make sure to set a root password that you will remember as it will be needed later on for establishing your database to work with your website later on:
+Continue with standard settings. Make sure to set a root password that you will remember as it will be needed later for linking the database to the website itself:
 
 ![image](https://github.com/user-attachments/assets/d4ec0f24-e368-406e-a520-66486fbe40a8)
 
 After all of this, select "Execute" to complete the configuration, then select "Finish".
 
-<br />
-<br />
 <br />
 
 # Website Configuration
