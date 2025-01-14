@@ -202,6 +202,8 @@ If all went well, you should have your ticketing site completely setup and ready
 
 ![image](https://github.com/user-attachments/assets/337d0711-54b0-49c8-89eb-335e919d1a7e)
 
+# Conclusion
+
 Take note of the "Your osTicket URL" and "Your Staff Control Panel" links as we will be utilizing them in the next installations of this walkthrough series. 
 
 As the very last steps for this section, we'll do a bit of cleaning up. First, delete C:\inetpub\wwwroot\osTicket\setup. 
