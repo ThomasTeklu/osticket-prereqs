@@ -210,7 +210,7 @@ As the very last steps for this section, we'll do a bit of cleaning up. First, d
 
 Next and lastly, change the permissions of the ost-config.php file we tinkered with earlier to "Read" only. Do this by again navigating to the file, opening its properties, clicking "Advanced" then double-click on "Full Control" and deselct every option except "Read". Apply the changes and exit.
 
-In the next walkthrough, we'll work on Post-Installation Setup.
+In the next walkthrough, we'll work on [Post-Installation Setup]([http://url.com](https://github.com/ThomasTeklu/post-install-config)).
 
 
 Until then, take care!
